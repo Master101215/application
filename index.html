@@ -6,21 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>_QuestionMark's Application for Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(135deg, #f0f4f8, #cfd8dc); /* Gradient background */
             color: #333;
-            scroll-behavior: smooth; /* Smooth scrolling */
-            filter: grayscale(100%); /* Apply black-and-white filter */
+            scroll-behavior: smooth;
+            filter: grayscale(100%);
         }
         header {
-            background-color: #333; /* Dark gray instead of green */
+            background-color: #333;
             color: white;
-            padding: 1rem;
+            padding: 1.5rem;
             text-align: center;
+            font-weight: 600;
+            font-size: 1.8rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Header shadow */
         }
         nav {
             text-align: center;
@@ -29,46 +33,83 @@
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #333; /* Dark gray */
-            transition: color 0.3s; /* Smooth color transition */
+            color: #333;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
         }
         nav a:hover {
-            color: #666; /* Lighter gray for hover */
+            background-color: #333;
+            color: #f0f4f8;
         }
         section {
-            padding: 2rem;
+            padding: 3rem;
             max-width: 800px;
             margin: 0 auto;
             background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            opacity: 0; /* Start invisible */
-            transition: opacity 0.5s ease-in-out; /* Fade-in effect */
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transition: opacity 0.7s ease-in-out;
+            transform: translateY(20px);
         }
         section[data-aos] {
-            opacity: 1; /* Make visible when scrolled into view */
+            opacity: 1;
+            transform: translateY(0);
         }
         img.profile-pic {
             max-width: 150px;
             border-radius: 50%;
             margin-bottom: 1.5rem;
-            filter: grayscale(100%); /* Black-and-white for images */
+            filter: grayscale(100%);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         h1, h2 {
             color: #333;
+            font-weight: 600;
+        }
+        h2 {
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
+        p, li {
+            line-height: 1.6;
+            font-weight: 300;
         }
         footer {
             text-align: center;
-            padding: 1rem;
-            background-color: #333; /* Dark gray instead of green */
+            padding: 1.5rem;
+            background-color: #333;
             color: white;
             margin-top: 2rem;
+            font-weight: 400;
+        }
+        a.button {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            margin-top: 1rem;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        a.button:hover {
+            background-color: #555;
+            transform: translateY(-2px);
+        }
+        ul {
+            padding-left: 1.2rem;
+        }
+        li {
+            margin: 0.5rem 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Application</h1>
+        <h1>_QuestionMark's Developer Application</h1>
     </header>
 
     <nav>
@@ -82,44 +123,44 @@
     <section id="about" data-aos="fade-up">
         <h2>Hello, I'm _QuestionMark_!</h2>
         <p>
-            I'm applying for developer in Rice Network.
+            I'm applying for the developer position at Rice Network.
         </p>
+    </section>
+
+    <section id="why" data-aos="fade-up">
+        <h2>Why am I doing this on an external website and not Discord?</h2>
+        <ul>
+            <li>Discord posting lacks flexibility; an external site gives more control.</li>
+            <li>It showcases my coding skills in a real-world project.</li>
+            <li>It’s cooler! (ඞ)</li>
+        </ul>
     </section>
 
     <section id="skills" data-aos="fade-up">
         <h2>My Skills</h2>
         <ul>
-            <li>I'm a passionate coder, some languages I know are: HTML, CSS, C++, Java, Javascript, Python, and more.</li>
-            <li>I'm a avid fan of the game Minecraft. I'm a survivalist, but I dabble in redstone and PVP.</li>
+            <li>Languages: HTML, CSS, C++, Java, JavaScript, Python, and more.</li>
+            <li>Passionate about Minecraft, with skills in survival, redstone, and PVP.</li>
         </ul>
-
-    </section>
-
-    <section id="why" data-aos="fade-up">
-        <h2>Why am I doing this on an external website and not Discord?</h2>
-        <ul></ul>
-            <li>First of all, Discord posting sucks, and I do not want to deal with that.</li>
-            <li>Coding an application on an external website allows me to showcase my developer skills.</li>
-            <li>It's cooler. (ඞ)</li>
     </section>
 
     <section id="experience" data-aos="fade-up">
         <h2>Experience</h2>
-        <p>I have had many experiences as a developer including, but not excluding:</p>
+        <p>Here are some of my projects and experiences:</p>
         <ul>
-            <li>QuestionLauncher: <a href="https://master101215.github.io/questionlauncher" target="_blank">QuestionLauncher</a></li>
+            <li><a href="https://master101215.github.io/questionlauncher" target="_blank" class="button">QuestionLauncher</a></li>
             <li>Owner of QuestionSMP</li>
-            <li>Owner of QuestionSMP Season 2 Beta, a Unreleased Minecraft 1.20.6 server aiming to recreate Hypixel Skyblock playable with Eaglercraft <em>(sneak peek coming soon :D)</em>.</li>
+            <li>Owner of QuestionSMP Season 2 Beta, an unreleased Minecraft 1.20.6 server.</li>
         </ul>
     </section>
 
     <section id="contact" data-aos="fade-up">
         <h2>Contact Me</h2>
-        <p>Feel free to reach out to me through the following platforms:</p>
+        <p>Reach out to me on these platforms:</p>
         <ul>
-            <li>GitHub: <a href="github.com/Master101215" target="_blank">My Github</a></li>
-            <li>Discord: My username is _questionmark__</li>
-            <li>Minecraft: My username is _QuestionMark_</li>
+            <li>GitHub: <a href="https://github.com/Master101215" target="_blank" class="button">My GitHub</a></li>
+            <li>Discord: _questionmark__</li>
+            <li>Minecraft: _QuestionMark_</li>
         </ul>
     </section>
 
@@ -129,9 +170,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 800, // Animation duration
-        });
+        AOS.init({ duration: 800 });
     </script>
 </body>
 </html>
