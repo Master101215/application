@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>_QuestionMark's Application for Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -11,20 +10,17 @@
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #f0f4f8, #cfd8dc); /* Gradient background */
+            background: linear-gradient(135deg, #f0f4f8, #cfd8dc);
             color: #333;
             scroll-behavior: smooth;
             filter: grayscale(100%);
         }
-        header {
+        header, footer {
             background-color: #333;
             color: white;
-            padding: 1.5rem;
             text-align: center;
-            font-weight: 600;
-            font-size: 1.8rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Header shadow */
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         nav {
             text-align: center;
@@ -34,10 +30,9 @@
             margin: 0 15px;
             text-decoration: none;
             color: #333;
-            font-weight: 500;
             padding: 0.5rem 1rem;
             border-radius: 5px;
-            transition: all 0.3s ease;
+            transition: background-color 0.3s;
         }
         nav a:hover {
             background-color: #333;
@@ -51,74 +46,29 @@
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             opacity: 0;
-            transition: opacity 0.7s ease-in-out;
+            transition: opacity 0.7s, transform 0.7s;
             transform: translateY(20px);
         }
         section[data-aos] {
             opacity: 1;
             transform: translateY(0);
         }
-        img.profile-pic {
-            max-width: 150px;
-            border-radius: 50%;
-            margin-bottom: 1.5rem;
-            filter: grayscale(100%);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
         h1, h2 {
-            color: #333;
             font-weight: 600;
-        }
-        h2 {
-            margin-top: 0;
-            font-size: 1.8rem;
-        header {
-            background-color: #333;
-            color: white; /* Text color set to white */
-            padding: 1.5rem;
-            text-align: center;
-            font-weight: 600;
-            font-size: 1.8rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Header shadow */
-        }
-
-        }
-        p, li {
-            line-height: 1.6;
-            font-weight: 300;
-        }
-        footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-            padding: 1.5rem;
-            background-color: #333;
-            color: white;
-            font-weight: 400;
-            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
-        }
-
         }
         a.button {
             display: inline-block;
             padding: 0.5rem 1.5rem;
             margin-top: 1rem;
-            border-radius: 5px;
             background-color: #333;
             color: white;
             text-decoration: none;
-            transition: background-color 0.3s ease, transform 0.3s ease;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
         }
         a.button:hover {
             background-color: #555;
             transform: translateY(-2px);
-        }
-        ul {
-            padding-left: 1.2rem;
-        }
-        li {
-            margin: 0.5rem 0;
         }
     </style>
 </head>
@@ -137,9 +87,7 @@
 
     <section id="about" data-aos="fade-up">
         <h2>Hello, I'm _QuestionMark_!</h2>
-        <p>
-            I'm applying for the developer position at Rice Network.
-        </p>
+        <p>I'm applying for the developer position at Rice Network.</p>
     </section>
 
     <section id="why" data-aos="fade-up">
@@ -147,7 +95,7 @@
         <ul>
             <li>Discord posting lacks flexibility, while an external site (<strong>Github Pages</strong>) gives more control.</li>
             <li>It showcases my coding skills in a real-world project.</li>
-            <li>It’s cooler! (ඞ)</li>
+            <li>It’s cooler!</li>
         </ul>
     </section>
 
@@ -156,26 +104,24 @@
         <ul>
             <li>Languages: HTML, CSS, C++, Java, JavaScript, Python, and more.</li>
             <li>Passionate about Minecraft, with skills in survival, redstone, and PVP.</li>
-            <li>I have Minecraft Java, allowing me to bugtest servers in a variety of versions</li>
+            <li>I have Minecraft Java, allowing me to bugtest servers in a variety of versions.</li>
         </ul>
     </section>
 
     <section id="experience" data-aos="fade-up">
         <h2>Experience</h2>
-        <p>Here are some of my projects and experiences:</p>
         <ul>
             <li><a href="https://master101215.github.io/questionlauncher" target="_blank" class="button">QuestionLauncher</a></li>
             <li>Owner of QuestionSMP Season 1</li>
             <li>Owner of QuestionSMP Season 2 Beta, an unreleased Minecraft/Eaglercraft 1.20.6 server aiming to recreate Hypixel Skyblock.</li>
             <li>Beta tester for plugins such as Vulcan Anticheat and more.</li>
             <li>I have coded my own plugins.</li>
-            <li>I have experience in datapacks for Minecraft in a variety of versions.</li>
+            <li>Experience with Minecraft datapacks for various versions.</li>
         </ul>
     </section>
 
     <section id="contact" data-aos="fade-up">
         <h2>Contact Me</h2>
-        <p>Reach out to me on these platforms:</p>
         <ul>
             <li>GitHub: <a href="https://github.com/Master101215" target="_blank" class="button">My GitHub</a></li>
             <li>Discord: _questionmark__</li>
